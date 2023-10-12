@@ -1,0 +1,36 @@
+
+
+.about {
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.about .container .img-wrapper {
+    flex-basis: 50%;
+}
+.about .container .text {
+    flex-basis: 50%;
+}
+.about .container .text h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about .container .text p:last-child {
+    margin-top: 20px;
+}
+.says {
+    margin: 20px auto 50px;
+}
+
+@media (max-width: 876px) {
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .container p {
+        max-width: 70ch;
+    }
+}
