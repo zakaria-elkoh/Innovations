@@ -50,8 +50,8 @@ form.container > textarea {
     border: 0;
     outline: 0;
     border-radius: 4px;
-    width: calc(50% - 7px);
     display: inline-block;
+    width: calc(50% - 7px);
 }
 form.container input[placeholder="First Name"] {
     margin-right: 8px;
