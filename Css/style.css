@@ -51,7 +51,7 @@ section,
     text-align: center;
 }
 .main-heading h1 {
-    font-size: clamp(1.1rem, 3vw, 2rem);
+    font-size: clamp(1.1rem, 3vw, 1.8rem);
     line-height: 1.5;
     font-weight: 700;
 }
@@ -270,6 +270,28 @@ header .header-section .img-wrapper {
 }
 .blogs .cards .card .img-wrapper {
     margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    margin-inline: auto;
+}
+.blogs .cards .card .img-wrapper img {
+    margin-bottom: -9px;
+}
+.blogs .cards .card .img-wrapper div {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.033), rgba(0, 0, 0, 0.685));    ;
+    padding: 10px;
+    position: absolute;
+    bottom: -65%; left: 0;
+    width: 100%;
+    transition: 0.3s;
+}
+.blogs .cards .card .img-wrapper:hover div {
+    bottom: 0; 
+}
+.blogs .cards .card .img-wrapper div p {
+    color: #fff;
+    font-size: clamp(.7rem, 5vw, .8rem);
 }
 .blogs .cards .card .text {
     margin-top: 20px;
@@ -309,12 +331,12 @@ header .header-section .img-wrapper {
 .subscribe .text {
 }
 .subscribe .text h3 {
-    font-size: clamp(1rem, 5vw, 1.45rem);
+    font-size: clamp(1rem, 5vw, 1.3rem);
 }
 .subscribe .text p {
     max-width: 50ch;
     margin-top: 15px;
-    font-size: clamp(0.8rem, 5vw, 0.9rem);
+    font-size: clamp(0.7rem, 5vw, 0.8rem);
     
 }
 .subscribe .input-wrapper {
@@ -327,18 +349,17 @@ header .header-section .img-wrapper {
     border: 0;
     outline: 0;
     border-radius: 4px;
-    flex-grow: 1;
 }
-.subscribe .input-wrapper form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.subscribe .input-wrapper input:last-child {
+.subscribe .input-wrapper input[type="button"] {
     background-color: #DB4A87;
     color: white;
     margin-left: 10px;
     flex-grow: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.subscribe .input-wrapper input[type="button"]:hover {
+    background-color: #ca457c;
 }
 .subscribe .input-wrapper input[type="checkbox"] {
     position: relative;
@@ -346,6 +367,7 @@ header .header-section .img-wrapper {
 }
 .subscribe .input-wrapper label {
     font-size: 0.7rem;
+    cursor: pointer;
 }
 @media (max-width: 880px) {
     .subscribe .container {
