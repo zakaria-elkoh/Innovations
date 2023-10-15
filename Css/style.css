@@ -73,14 +73,15 @@ header nav {
 
 header nav ul {
     display: flex;
-    gap: 15px;
     align-items: center;
+    gap: 15px;
 }
 
 header nav ul .logo {
     margin: 25px 110px 25px 0;
-    font-size: 1.4rem;
-    color: #000000;
+    max-width: 160px;
+    position: relative;
+    top: 4px;
 }
 header nav ul .logo span {
     color: #0a7272;
@@ -367,6 +368,9 @@ footer .container {
     display: flex;
     gap: 15px;
     padding-block: 40px;
+}
+footer .container .logo-wrapper img {
+    max-width: 170px;
 }
 footer .container .logo-wrapper p {
     font-size: .8rem;

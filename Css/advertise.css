@@ -1,6 +1,4 @@
 
-.ads {
-}
 .ads ul {
     display: flex;
     justify-content: space-around;
@@ -31,10 +29,6 @@
 }
 .ads .container > div div {
     flex-basis: 50%;
-}
-.ads .container .img-wrapper {
-}
-.ads .container .text {
 }
 .ads .container .text p {
     margin-block: 20px;

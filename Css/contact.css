@@ -1,36 +1,29 @@
 
-
 .contact-info {
     text-align: center;
 }
-
 .contact-info .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin-top: 30px;
     gap: 25px;
 }
-
 .contact-info .cards .card {
     padding: 35px 0;
     border-radius: 15px;
     background-color: #FFFAF6;
 }
-
 .contact-info .cards .card:nth-child(2) {
     background-color: #F7FBFB; 
 }
-
 .contact-info .cards .card:nth-child(3) {
     background-color: #FBF8F6; 
 }
-
 .contact-info .cards .card i {
     margin-bottom: 15px;
     font-size: 1.2rem;
     color: #444;
 }
-
 .form-section {
     background-image: url(../Imgs/form-bg.jpg);
 }
