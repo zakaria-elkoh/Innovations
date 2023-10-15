@@ -7,7 +7,8 @@ header nav {
 .hero {
     min-height: calc(100vh - 85px);
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
-    background-image: url(../Imgs/hero-bg.jpg);
+    /* background-image: url(../Imgs/hero-bg.jpg); */
+    background-color: #F8F0EA;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -23,8 +24,11 @@ header nav {
     bottom: 200px;
 }
 .hero .container .heading h6 {
-    margin-bottom: -15px;
+    margin-bottom: -6px;
     font-size: clamp(0.7rem, 5vw, 0.8rem);
+}
+.hero .container .heading h6 a {
+    color: #222;
 }
 .hero .container .heading h1 {
     color: #222;
@@ -32,7 +36,7 @@ header nav {
     font-size: clamp(2.6rem, 5vw, 3.5rem);
 }
 .hero .container i {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #555;
     position: absolute;
     bottom: 130px; left: 50%;

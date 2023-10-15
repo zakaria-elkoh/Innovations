@@ -1,0 +1,60 @@
+
+section {
+    padding: 80px 10px;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.125);
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 35px 20px;
+}
+form h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+form label {
+    display: inline-block;
+    margin-block: 20px 0;
+    font-size: 0.8rem;
+}
+form input {
+    background-color: #EFF3F7;
+    padding: 12px 14px;
+    margin-block: 6px;
+    font-size: .8rem;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    width: 100%;
+}
+form button {
+    background-color: #EFF3F7;
+    color: #444;
+    padding: 8px 25px;
+    margin: 20px auto 6px;
+    display: block;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.064);
+}
+form button:hover {
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.12);
+}
+form p {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+form a:hover {
+    text-decoration: underline;
+}

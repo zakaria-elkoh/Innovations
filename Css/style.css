@@ -47,22 +47,18 @@ section,
 .section {
     padding-block: 80px;
 }
-
 .main-heading {
     text-align: center;
 }
-
 .main-heading h1 {
     font-size: clamp(1.1rem, 3vw, 2rem);
     line-height: 1.5;
     font-weight: 700;
 }
-
 .main-heading p {
     max-width: 50ch;
     margin: 20px auto 0;
 }
-
 /* ======================= end the componants ======================= */
 
 header {
@@ -86,40 +82,25 @@ header nav ul .logo {
     font-size: 1.4rem;
     color: #000000;
 }
-
 header nav ul .logo span {
     color: #0a7272;
 }
-
 header nav ul li {
     font-weight: 600;
     font-size: 0.9rem;
     text-transform: capitalize;
 }
-
-header nav ul li a {
+header nav a {
     color: #b3b3b3;
+    font-weight: 500;
     transition: var(--main-transition);
 }
-
-header nav ul li a.active {
+header nav a.active {
     color: #0a7272;
 }
-
-header nav ul li a:hover {
+header nav a:hover {
     color: #0A8080;
 }
-
-header .container .log-in a {
-    font-weight: 600;
-    color: #0A8080;
-    transition: var(--main-transition);
-}
-
-header .container .log-in a:hover {
-    color: #0a7272;
-}
-
 header .header-section {
     height: calc(100vh - 73px);
     display: flex;
@@ -127,17 +108,14 @@ header .header-section {
     align-items: center;
     justify-content: center;
 }
-
 header .header-section .text {
     text-align: center;
     margin-bottom: -100px;
     z-index: 3;
 }
-
 header .header-section .text p {
     margin-block: 20px;
 }
-
 header .header-section .text .btn {
     color: #fff;
     background-color: #0A8080;
@@ -145,32 +123,24 @@ header .header-section .text .btn {
     transition: var(--main-transition);
     box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.1);
 }
-
 header .header-section .text .btn:hover {
     background-color: #0a7272;
     box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.2);
 }
-
 header .header-section .img-wrapper {
     max-width: 800px;
     margin-bottom: -40px;
 }
-
-
 @media (max-width: 800px) {
-    
-header nav ul li:not(:first-child) {
-        display: none;
+    header nav ul li:not(:first-child) {
+            display: none;
+        }
     }
-}
-
 @media (max-width: 660px) {
     header .header-section .text {
         margin-bottom: 80px;
     }
 }
-
-
 /* ================== start the services ================== */
 .services {
     background-image: url(../Imgs/bg-red.jpg);
@@ -178,8 +148,9 @@ header nav ul li:not(:first-child) {
 .services .cards {
     margin-top: 80px;
     display: grid;
-    gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* max-width: 1100px; */
 }
 .services .cards .card {
     display: flex;
@@ -191,24 +162,25 @@ header nav ul li:not(:first-child) {
 }
 .services .cards .card .text h5 {
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: .9rem;
+}
+.services .cards .card .text p {
+    font-size: .8rem;
 }
 .services .cards .card .text a {
     color: #299fff;
     display: inline-block;
+    font-size: .8rem;
     margin-top: 8px;
     transition: var(--main-transition);
 }
 .services .cards .card .text i {
     position: relative;
-    top: 2px; left: 2px;
+    top: 1px; left: 2px;
     transition: var(--main-transition);
 }
-.services .cards .card .text a:hover {
-    
-}
 .services .cards .card .text a:hover i {
-    left: 6px;
+    left: 8px;
 }
 .says {
     text-align: left;
@@ -246,9 +218,7 @@ header nav ul li:not(:first-child) {
 .partners > img {
     max-width: 120px;
 }
-
 /* ================== end the services ================== */
-
 
 /* ================== start the superheros ================== */
 .superheros {
@@ -322,7 +292,6 @@ header nav ul li:not(:first-child) {
 /* ================== end the blogs ================== */
 
 
-
 /* ================== start the subscribe ================== */
 .subscribe {
     background-color: #F8F0EA;
@@ -377,7 +346,6 @@ header nav ul li:not(:first-child) {
 .subscribe .input-wrapper label {
     font-size: 0.7rem;
 }
-
 @media (max-width: 880px) {
     .subscribe .container {
         flex-direction: column;
@@ -463,13 +431,6 @@ footer .container .boxes li a:hover {
         gap: 40px;
     }
 }
-
-
-
-
-
-
-
 /* ================== end the footer ================== */
 
 
