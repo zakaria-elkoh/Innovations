@@ -20,6 +20,48 @@
 .says {
     margin: 20px auto 50px;
 }
+.questions {
+}
+.questions .container {
+    max-width: 800px;
+    margin-top: 40px;
+}
+.questions .question {
+    margin-top: 20px;
+    cursor: pointer;
+}
+.questions .question > div {
+    background-color: #0A8080;
+    color: #fff;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.189);
+    border-radius: 40px;
+    padding: 10px 20px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions .question h6 {
+    font-size: 0.9rem;
+}
+.questions .question.active > div {
+    border-radius: 30px 30px 0 0;
+}
+.questions .question i {
+    transition: 0.3s;
+}
+.questions .question.active i {
+    transform: rotate(90deg);
+}
+.questions .question p {
+    padding: 15px 30px;
+    border-radius: 0 0 30px 30px;
+    font-size: .7rem;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.129);
+    display: none;
+}
+.questions .question.active p {
+    display: block;
+}
 
 @media (max-width: 876px) {
     .about .container {
