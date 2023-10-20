@@ -58,7 +58,7 @@
     font-size: .7rem;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.129);
     display: none;
-}
+}   
 .questions .question.active p {
     display: block;
 }

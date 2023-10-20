@@ -13,32 +13,52 @@
 </head>
     <body>
         <header>
-            <nav class="container">
-                <a href="./index.html"><img src="./Imgs/logo.png" alt="img" class="logo"></a>
-                <div>
-                    <ul>
-                        <li class="close-icon"><i class="fa-solid fa-xmark"></i></li>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="advertise.html">adversite</a></li>
-                        <li><a href="support.html">supports</a></li>
-                        <li><a href="./login.html" class="active">Login</a></li>
-                    </ul>
+            <nav class="">
+                <div class="container">
+                    <a href="./index.html"><img src="./Imgs/logo.png" alt="img" class="logo"></a>
+                    <div>
+                        <ul>
+                            <li class="close-icon"><i class="fa-solid fa-xmark"></i></li>
+                            <li><a href="index.html">home</a></li>
+                            <li>
+                                <a href="advertise.html">adversite <i class="fa-solid fa-sort-down"></i></a>
+                                <ul class="drop-down">
+                                    <li><a href="#">First</a></li>
+                                    <li><a href="#">Second</a></li>
+                                    <li><a href="#">Third</a></li>
+                                </ul>   
+                            </li>
+                            <li>
+                                <a href="support.html"> supports <i class="fa-solid fa-sort-down"></i></a>
+                                <ul class="drop-down">
+                                    <li><a href="#">First</a></li>
+                                    <li><a href="#">Second</a></li>
+                                    <li><a href="#">Third</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="./login.html" class="active">Login</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars burger"></i>
                 </div>
-                <i class="fa-solid fa-bars burger"></i>
             </nav>
             <section>
+                <div class="form-submition-alert">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                </div>
                 <form action="">
                     <h3>register:</h3>
                     <label for="name">Name:</label>
-                    <input name="name" type="text" placeholder="Name">
+                    <input required name="name" type="text" placeholder="Name">
                     <label for="email">Email:</label>
-                    <input name="email" type="email" placeholder="Enter your email">
+                    <input required name="email" type="email" placeholder="Enter your email">
                     <label for="password">Password:</label>
-                    <input name="password" type="password" placeholder="Password">
+                    <input required  class="password-input" name="password" type="password" placeholder="Password">
                     <label for="password">Confirm Password:</label>
-                    <input name="password" type="password" placeholder="Confirm Your Password">
-                    <button>register</button>
+                    <input required class="password-confirm-input" name="password" type="password" placeholder="Confirm Your Password">
+                    <p class="error-message">password are not matching</p>
+                    <button class="btn">register</button>
                     <p>Already have an account?<a href="./login.html"> Log in</a></p>
                 </form>
             </section>
@@ -49,5 +69,7 @@
         
     <!-- main js -->
     <script src="./Js/main.js"></script>
+    <!-- form validation -->
+    <script src="./Js/form-validation.js"></script>
     </body>
 </html>

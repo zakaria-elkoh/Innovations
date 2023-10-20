@@ -2,6 +2,39 @@
 section {
     padding: 80px 10px;
 }
+.form-submition-alert {
+    top: 140px; right: -100%;
+    position: fixed;
+}
+.form-submition-alert.show {
+    right: 40px;
+    animation: alert-animation 1s;
+}
+.form-submition-alert p {
+    color: green;
+    background-color: #fff;
+    padding: 4px 15px;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.169);
+    border-left: 3px solid green;
+}
+@keyframes alert-animation {
+    0% {
+        right: -100%;
+    }
+    25% {
+        right: 100px;
+    }
+    50% {
+        right: 0;
+    }
+    75% {
+        right: 50px;
+    }
+    100% {
+        right: 40px;
+    }
+}
+
 form {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.125);

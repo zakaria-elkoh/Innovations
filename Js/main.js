@@ -1,4 +1,16 @@
 
+// =============== start the nav bar
+const nav = document.querySelector("header nav");
+
+window.onscroll = () => {
+    if(window.scrollY > 250) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+}
+// =============== end the nav bar
+
 // =============== start the menu
 const burgerIcon = document.querySelector("header nav i.burger"),
       closeIcon = document.querySelector("header li.close-icon"),
@@ -21,9 +33,7 @@ questions.forEach((question) => {
         question.classList.toggle("active");
     });
 })
-
 // =============== end the questions
-
 
 // =============== atart the ads slider
 const adsLis = document.querySelectorAll(".ads ul li"),
@@ -41,11 +51,29 @@ adsLis.forEach((li) => {
 })
 // =============== end the ads slider
 
+// =============== start the pop up
+const popUpWrapper = document.querySelector(".pop-up-wrapper"),
+popUpParagraph = document.querySelector(".pop-up-wrapper .pop-up p"),
+servicesPopUpLinks = document.querySelectorAll(".services .cards .card .text a");
 
 
+const showPopUp = () => {
+    popUpWrapper.classList.add("show");
+};
 
+servicesPopUpLinks.forEach((el) => {
+    el.addEventListener("click", showPopUp);
+});
 
+popUpParagraph.addEventListener("click", (event) => {
+    event.stopPropagation();
+});
+popUpWrapper.addEventListener("click", () => {
+    console.log("clicked");
+    popUpWrapper.classList.remove("show");
+});
 
+// =============== end the pop up
 
 
 
