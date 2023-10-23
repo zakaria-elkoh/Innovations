@@ -35,46 +35,6 @@ questions.forEach((question) => {
 })
 // =============== end the questions
 
-// =============== atart the ads slider
-const adsLis = document.querySelectorAll(".ads ul li"),
-sliderWrapper = document.querySelector(".ads .cards-wrapper");
-
-adsLis.forEach((li) => {
-    li.addEventListener("click", () => {
-        adsLis.forEach((item) => {
-            item.classList.remove("active");
-        });
-        li.classList.add("active");
-        let curentTargetLi = li.getAttribute('data-num') * 33.333;
-        sliderWrapper.style.transform = `translateX(-${curentTargetLi}%)`;
-    });
-})
-// =============== end the ads slider
-
-// =============== start the pop up
-const popUpWrapper = document.querySelector(".pop-up-wrapper"),
-popUpParagraph = document.querySelector(".pop-up-wrapper .pop-up p"),
-servicesPopUpLinks = document.querySelectorAll(".services .cards .card .text a");
-
-
-const showPopUp = () => {
-    popUpWrapper.classList.add("show");
-};
-
-servicesPopUpLinks.forEach((el) => {
-    el.addEventListener("click", showPopUp);
-});
-
-popUpParagraph.addEventListener("click", (event) => {
-    event.stopPropagation();
-});
-popUpWrapper.addEventListener("click", () => {
-    console.log("clicked");
-    popUpWrapper.classList.remove("show");
-});
-
-// =============== end the pop up
-
 
 
 

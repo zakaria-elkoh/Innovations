@@ -13,9 +13,11 @@
 </head>
     <body>
         <header>
-            <nav class="">
+            <nav>
                 <div class="container">
-                    <a href="./index.html"><img src="./Imgs/logo.png" alt="img" class="logo"></a>
+                    <div class="logo">
+                        <a href="./index.html"><img src="./Imgs/logo.png" alt="img"></a>
+                    </div>
                     <div>
                         <ul>
                             <li class="close-icon"><i class="fa-solid fa-xmark"></i></li>
@@ -44,9 +46,6 @@
                 </div>
             </nav>
             <section>
-                <div class="form-submition-alert">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </div>
                 <form action="">
                     <h3>register:</h3>
                     <label for="name">Name:</label>
@@ -55,8 +54,8 @@
                     <input required name="email" type="email" placeholder="Enter your email">
                     <label for="password">Password:</label>
                     <input required  class="password-input" name="password" type="password" placeholder="Password">
-                    <label for="password">Confirm Password:</label>
-                    <input required class="password-confirm-input" name="password" type="password" placeholder="Confirm Your Password">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input required class="password-confirm-input" name="confirm-password" type="password" placeholder="Confirm Your Password">
                     <p class="error-message">password are not matching</p>
                     <button class="btn">register</button>
                     <p>Already have an account?<a href="./login.html"> Log in</a></p>

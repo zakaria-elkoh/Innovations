@@ -5,7 +5,6 @@ header nav {
 .hero {
     min-height: calc(100vh - 85px);
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
-    /* background-image: url(../Imgs/hero-bg.jpg); */
     background-color: #F8F0EA;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +13,7 @@ header nav {
 }
 .hero .container .heading {
     position: absolute;
-    bottom: 200px;
+    bottom: 300px;
 }
 .hero .container .heading h6 {
     margin-bottom: -6px;
@@ -32,7 +31,7 @@ header nav {
     font-size: 1.6rem;
     color: #555;
     position: absolute;
-    bottom: 130px; left: 50%;
+    bottom: 150px; left: 50%;
     transform: translateX(-50%);
     text-align: center;
     animation: up-down 2s infinite;

@@ -70,6 +70,7 @@ section,
     top: 0; left: 0;
     display: none;
     place-items: center;
+    padding: 0 15px;
     width: 100%;
     height: 100vh;
     z-index: 9999;
@@ -92,8 +93,18 @@ section,
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.177);
     position: relative;
 }
+.pop-up div {
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pop-up h2 {
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    margin-block: 15px;
+}
 .pop-up p {
-    padding: 20px;
     max-width: 40ch;
     font-size: 0.85rem;
 }
@@ -258,6 +269,9 @@ header .header-section .img-wrapper {
     margin-bottom: -40px;
 }
 @media (max-width: 840px) {
+    header nav.scrolled {
+        animation:  none;
+    }
     header nav ul {
         background-color: rgb(255, 255, 255);
         box-shadow: 4px 4px 1000px rgba(0, 0, 0, 0.601);
@@ -406,9 +420,6 @@ header .header-section .img-wrapper {
 /* ================== end the services ================== */
 
 /* ================== start the superheros ================== */
-.superheros {
-    
-}
 .superheros .cards {
     margin-top: 70px;
     display: grid;
@@ -433,8 +444,6 @@ header .header-section .img-wrapper {
 
 
 /* ================== start the blogs ================== */
-.blogs {
-}
 .blogs .cards {
     display: flex;
     gap: 20px;

@@ -17,9 +17,11 @@
     <main>
 
         <header>
-            <nav class="">
+            <nav>
                 <div class="container">
-                    <a href="./index.html"><img src="./Imgs/logo.png" alt="img" class="logo"></a>
+                    <div class="logo">
+                        <a href="./index.html"><img src="./Imgs/logo.png" alt="img"></a>
+                    </div>
                     <div>
                         <ul>
                             <li class="close-icon"><i class="fa-solid fa-xmark"></i></li>
@@ -71,11 +73,15 @@
         <div class="pop-up-wrapper">
             <div class="pop-up container">
                 <i class="fa-solid fa-circle-xmark pop-up-close-icon"></i>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure ducimus quisquam itaque asperiores quasi officiis? Natus amet eos laborum facilis maxime molestiae ab illo iure omnis, asperiores voluptatibus dolores.
-                </p>
+                <div>
+                    <img src="./Imgs/services-3.jpg" alt="img">
+                    <h2>Serveces</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iure ducimus quisquam itaque asperiores quasi officiis? Natus amet eos laborum facilis maxime molestiae ab illo iure omnis, asperiores voluptatibus dolores.
+                    </p>
+                </div>
             </div>
-        </div>
+        </div>  
 
         <section class="services">
             <div class="main-heading">
@@ -191,57 +197,57 @@
             </div>
             <div class="cards container">
                 <!-- card 1 -->
-                <div class="card">
+                <div class="card card-1">
                     <img src="./Imgs/services-1.jpg" alt="img">
                     <div class="text">
                         <h5>3D modeling & art</h5>
                         <p>Get your info tests delivered at home collect a sample from the your pogress tests.</p>
-                        <a href="#services">Learn more <i class="fa-solid fa-angle-right"></i> </a>
+                        <a href="#services" data-num="1">Learn more <i class="fa-solid fa-angle-right"></i> </a>
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="card">
+                <div class="card card-2">
                     <img src="./Imgs/services-2.jpg" alt="img">
                     <div class="text">
                         <h5>Digital promotion</h5>
                         <p>Get your info tests delivered at home collect a sample from the your pogress tests.</p>
-                        <a href="#services">Learn more <i class="fa-solid fa-angle-right"></i> </a>
+                        <a href="#services" data-num="2">Learn more <i class="fa-solid fa-angle-right"></i> </a>
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="card">
+                <div class="card card-3">
                     <img src="./Imgs/services-3.jpg" alt="img">
                     <div class="text">
                         <h5>Business Enterprise</h5>
                         <p>Get your info tests delivered at home collect a sample from the your pogress tests.</p>
-                        <a href="#services">Learn more <i class="fa-solid fa-angle-right"></i> </a>
+                        <a href="#services" data-num="3">Learn more <i class="fa-solid fa-angle-right"></i> </a>
                     </div>
                 </div>
                 <!-- card 4 -->
-                <div class="card">
+                <div class="card card-4">
                     <img src="./Imgs/services-4.jpg" alt="img">
                     <div class="text">
                         <h5>Marketing & advertising</h5>
                         <p>Get your info tests delivered at home collect a sample from the your pogress tests.</p>
-                        <a href="#services">Learn more <i class="fa-solid fa-angle-right"></i> </a>
+                        <a href="#services" data-num="4">Learn more <i class="fa-solid fa-angle-right"></i> </a>
                     </div>
                 </div>
                 <!-- card 5 -->
-                <div class="card">
+                <div class="card card-5">
                     <img src="./Imgs/services-5.jpg" alt="img">
                     <div class="text">
                         <h5>Ultimate development</h5>
                         <p>Get your info tests delivered at home collect a sample from the your pogress tests.</p>
-                        <a href="#services">Learn more <i class="fa-solid fa-angle-right"></i> </a>
+                        <a href="#services" data-num="5">Learn more <i class="fa-solid fa-angle-right"></i> </a>
                     </div>
                 </div>
                 <!-- card 6 -->
-                <div class="card">
+                <div class="card card-6">
                     <img src="./Imgs/services-6.jpg" alt="img">
                     <div class="text">
                         <h5>Online support</h5>
                         <p>Get your info tests delivered at home collect a sample from the your pogress tests.</p>
-                        <a href="#services">Learn more <i class="fa-solid fa-angle-right"></i> </a>
+                        <a href="#services" data-num="6">Learn more <i class="fa-solid fa-angle-right"></i> </a>
                     </div>
                 </div>
 
@@ -382,11 +388,8 @@
     </main>
 
 
-
-
-
-
     <!-- main js -->
     <script src="./Js/main.js"></script>
+    <script src="./Js/popUp.js"></script>
 </body>
 </html>
