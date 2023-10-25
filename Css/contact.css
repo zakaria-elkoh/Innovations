@@ -4,7 +4,7 @@
 }
 .contact-info .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     margin-top: 30px;
     gap: 25px;
 }
@@ -61,7 +61,9 @@ form.container button {
     color: #fff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.064);
     display: block;
-    padding: 6px 100px;
+    padding-block: 6px;
+    width: 50%;
+    max-width: 250px;
     margin: 20px auto 0;
     border-radius: 6px;
     border: 0; 

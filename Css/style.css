@@ -48,6 +48,11 @@ p {
     margin: 0 auto;
     padding-inline: 20px;
 }
+@media (max-width: 400px) {
+    .container {
+        padding-inline: 10px;
+    }
+}
 section,
 .section {
     padding-block: 80px;
@@ -368,7 +373,7 @@ header .header-section .img-wrapper {
 }
 .services .cards .card .text a {
     color: var(--a-clr);
-    display: inline-block;
+    display: block;
     font-size: .8rem;
     margin-top: 8px;
     transition: var(--main-transition);
@@ -417,6 +422,17 @@ header .header-section .img-wrapper {
 .partners > img {
     max-width: 120px;
 }
+
+@media (max-width: 500px) {
+    .services .cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .services .cards .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 /* ================== end the services ================== */
 
 /* ================== start the superheros ================== */
@@ -438,6 +454,11 @@ header .header-section .img-wrapper {
 }
 .social-icons img {
     margin-right: 6px;
+}
+@media (max-width: 500px) {
+    .superheros .cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
 /* ================== end the superheros ================== */
 
@@ -521,8 +542,6 @@ header .header-section .img-wrapper {
     border-radius: 8px;
     background-color: #fff;
 }
-.subscribe .text {
-}
 .subscribe .text h3 {
     font-size: clamp(1rem, 5vw, 1.3rem);
 }
@@ -534,7 +553,6 @@ header .header-section .img-wrapper {
 }
 .subscribe .input-wrapper {
     padding: 10px;
-    min-width: 400px;
 }
 .subscribe .input-wrapper input {
     background-color: #EFF3F7;
@@ -569,6 +587,19 @@ header .header-section .img-wrapper {
     }
     .subscribe .container .text {
         text-align: center;
+    }
+}
+@media (max-width: 486px) {
+    .subscribe .container {
+        padding: 10px;
+    }
+    .subscribe .input-wrapper input {
+        width: 100%;
+    }
+    .subscribe .input-wrapper input[type="button"] {
+        width: 50%;
+        display: block;
+        margin: 10px auto;
     }
 }
 /* ================== end the subscribe ================== */

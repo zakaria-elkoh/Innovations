@@ -13,7 +13,7 @@ header nav {
 }
 .hero .container .heading {
     position: absolute;
-    bottom: 300px;
+    bottom: 30%;
 }
 .hero .container .heading h6 {
     margin-bottom: -6px;
@@ -25,7 +25,7 @@ header nav {
 .hero .container .heading h1 {
     color: #222;
     text-transform: capitalize;
-    font-size: clamp(2.6rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
 }
 .hero .container i {
     font-size: 1.6rem;
